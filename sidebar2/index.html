@@ -31,55 +31,28 @@
                 <h3>Bootstrap Sidebar</h3>
             </div>
 
-            <ul class="list-unstyled components">
-                <p>Dummy Heading</p>
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Home 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">Page 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
+            <form > 
+                <table>
+                  <thead>
+                    <tr>
+                      <th>テキスト</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input type="text" name="text[]"></td>
+                      <td><label><input ></label></td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td ><button id="add" type="button">追加</button></td>
+                    </tr>
+                  </tfoot>
+                </table>
+                </form>
 
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
-                </li>
-                <li>
-                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
-                </li>
-            </ul>
+            
         </nav>
 
         <!-- Page Content  -->
@@ -115,37 +88,24 @@
                 </div>
             </nav>
 
-            
-            <input type="button" id="colAdd" value="列追加" />
-            <input type="button" id="rowAdd" value="行追加" />
+           
+           
            <!-- <input type="button" id="colRemove" value="列削除" />
             <input type="button" id="rowRemove" value="行削除" />
             -->
             <br /><br />
              
-            <input type="text" id="mytextbox">
-<input type="button" id="mybutton" value="実行">
             <table>
               <tr>
+                <input type="button" id="rowAdd"  id="mytextbox" value="行追加" />
+                <input type="button" id="colAdd" id="mytextbox" value="列追加" />
                 <td><input type="text" name="data_value1" /></td>
-                <td><input type="text" name="data_value2" /></td>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Default checkbox
-                    </label>
-                  </div>
-              </tr>
+                <td><input type="text" name="data_value1" /></td>
+                  </tr>
               <tr>
                 <td><input type="text" name="data_value1" /></td>
-                <td><input type="number" name="data_value2" /></td>
               </tr>
-              <tr>
-                <td><input type="text" name="data_value1" /></td>
-                <td><input type="number" name="data_value2" /></td>
-              </tr>
-            </table>
-            
+              </table> 
     </div>
 
    
