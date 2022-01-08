@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Collapsible sidebar using Bootstrap 4</title>
+    <title>Todo Lists</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -28,36 +28,21 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
+                <h3>Todo Lists</h3>
             </div>
-
-            <form > 
-                <table>
-                  <thead>
-                    <tr>
-                      <th>テキスト</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><input type="text" name="text[]"></td>
-                      <td><label><input ></label></td>
-                    </tr>
-                  </tbody>
-                  <tfoot>
-                    <tr>
-                      <td ><button id="add" type="button">追加</button></td>
-                    </tr>
-                  </tfoot>
-                </table>
-                </form>
-
-            
+            <div class="d-flex flex-row">
+                <input type="text" id="sidebarText" class="form-control">
+                <button class="btn btn-link">
+                    <i class="fas fa-ellipsis-v fa-lg text-white"></i>
+                </button>  
+            </div>
+            <button class="pt-2 btn btn-link plusButton">
+                <i class="fas fa-plus-circle text-white"></i>
+            </button>  
         </nav>
 
         <!-- Page Content  -->
         <div id="content">
-
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
 
