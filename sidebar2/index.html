@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,29 @@
     <title>Todo Lists</title>
 
     <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Bootstrap Javascript(jQuery含む) -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
     <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="sidebar.js"></script>
     <script type="text/javascript" src="addColumn.js"></script>
 </head>
@@ -30,15 +42,24 @@
             <div class="sidebar-header">
                 <h3>Todo Lists</h3>
             </div>
-            <div class="d-flex flex-row">
-                <input type="text" id="sidebarText" class="form-control">
-                <button class="btn btn-link">
-                    <i class="fas fa-ellipsis-v fa-lg text-white"></i>
-                </button>  
+            <!--サイドタイトル-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mt-5">
+                        <div class="card">
+                            <div class="card-body">
+                                
+                                <div id="demo-area" class="form-group">
+                                    <div class="unit input-group mb-2">
+                                        <input name="test[]" type="text">
+                                    </div>
+                                </div>
+                                <div id="demo-plus" class="btn btn-primary">+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <button class="pt-2 btn btn-link plusButton">
-                <i class="fas fa-plus-circle text-white"></i>
-            </button>  
         </nav>
 
         <!-- Page Content  -->
@@ -50,7 +71,9 @@
                         <i class="fas fa-align-left"></i>
                         <span>Toggle Sidebar</span>
                     </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
                     </button>
 
@@ -73,26 +96,26 @@
                 </div>
             </nav>
 
-           
-           
-           <!-- <input type="button" id="colRemove" value="列削除" />
+ß
+
+            <!-- <input type="button" id="colRemove" value="列削除" />
             <input type="button" id="rowRemove" value="行削除" />
             -->
             <br /><br />
-             
-            <table>
-              <tr>
-                <input type="button" id="rowAdd"  id="mytextbox" value="行追加" />
-                <input type="button" id="colAdd" id="mytextbox" value="列追加" />
-                <td><input type="text" name="data_value1" /></td>
-                <td><input type="text" name="data_value1" /></td>
-                  </tr>
-              <tr>
-                <td><input type="text" name="data_value1" /></td>
-              </tr>
-              </table> 
-    </div>
 
-   
+            <table>
+                <div id="main-area" class="form-group">
+                    <div class="unit input-group mb-2">
+                        <input name="test[]" type="text">
+                    </div>
+                </div>
+                <div id="main-plus" class="btn btn-primary">+</div>
+
+            </table>
+        </div>
+
+        
+
 </body>
+
 </html>
