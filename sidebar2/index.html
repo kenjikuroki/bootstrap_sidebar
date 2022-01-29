@@ -42,7 +42,7 @@
             <div class="sidebar-header">
                 <h3>Todo Lists</h3>
             </div>
-            <!--サイドタイトル-->
+            
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 mt-5">
@@ -96,25 +96,36 @@
                 </div>
             </nav>
 
-ß
+
 
             <!-- <input type="button" id="colRemove" value="列削除" />
             <input type="button" id="rowRemove" value="行削除" />
             -->
             <br /><br />
 
-            <table>
-                <div id="main-area" class="form-group">
-                    <div class="unit input-group mb-2">
-                        <input name="test[]" type="text">
-                    </div>
-                </div>
-                <div id="main-plus" class="btn btn-primary">+</div>
-
-            </table>
+            
+                <div>
+                    <table border="1" id="DynamicAddRowCols">
+                        <thead>
+                            <tr>
+                                <td>Checklist</td>
+                                <td>Name</td>   
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>        
+                                <td><input type="checkbox"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input id="row" /><br />
+                    <button id="AddRows">Insert Row</button><br /><br />
+                    <input id="col" /><br />
+                    <button id="AddCol">Insert Row</button>
+                </div>  
         </div>
 
-        
 
 </body>
 

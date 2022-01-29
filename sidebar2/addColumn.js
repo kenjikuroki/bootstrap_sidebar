@@ -40,3 +40,30 @@ $(function(){
     }
   });
   });
+
+
+  //maincontents
+  $(document).ready(function () {
+    $('#AddRows').on("click", function () {
+        if ($('#row').val()) {
+            $('#DynamicAddRowCols tbody').append($("#DynamicAddRowCols tbody tr:first").clone());
+            $('#DynamicAddRowCols tbody tr:last td:first').html($('#row').val());
+        }
+        else {
+            alert('Enter Text');
+        }
+        return false;
+    });
+
+    
+    $('#AddCol').on("click", function () {
+        if ($('#col').val()) {
+            $('#DynamicAddRowCols tr').append($("<td>").clone());
+            $('#DynamicAddRowCols thead tr>td:last').html($('#col').val());
+        }
+        else {
+            alert('Enter Text');
+        }
+        return false;
+    });
+}); 
