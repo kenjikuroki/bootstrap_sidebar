@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pjax test</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="pjax.min.js"></script>
+    <script src="pjax_test.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="logo">LOGO</h1>
+        <nav>
+            <ul class="nav-items">
+                <li class="nav-items-contents">THIS</li>
+                <li class="nav-items-contents">IS</li>
+                <li class="nav-items-contents">PJAX</li>
+                <li class="nav-items-contents">SAMPLE</li>
+                <li class="nav-items-contents">PAGE</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="pjaxContent" class="pjax-test">
+        <h2 class="pjax-test-title">This is page <span>ONE</span></h2>
+        <div><a class="btn" href="next.html">Click To Change</a></div>
+        <div class="clear">
+            <div class="pjax-test-contents"></div>
+            <div class="pjax-test-contents"></div>
+            <div class="pjax-test-contents"></div>
+            <div class="pjax-test-contents"></div>
+            <div class="pjax-test-contents"></div>
+            <div class="pjax-test-contents"></div>
+            <div class="pjax-test-contents"></div>
+            <div class="pjax-test-contents"></div>
+        </div>
+        <div><a class="btn" href="next.html">Click To Change</a></div>
+    </section>
+    
+    <section class="links">
+        <h2 class="links-title">LINKS</h2>
+        <ul class="links-all">
+            <li class="links-all-item"><a href="http://falsandtru.github.io/jquery-pjax/api/" target="_blank">PJAX API</a></li>
+        </ul>
+    </section>
+    
+    
+    <footer>
+    <p>this is footer</p>
+    </footer>
+</body>
+</html>

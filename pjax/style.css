@@ -1,0 +1,25 @@
+.shutter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200vw;
+    height: 100vh;
+    background-color: #F0C010;
+    z-index: 99;
+    pointer-events: none;
+    transition: transform .8s ease-in-out;
+}
+
+.shutter-a {
+    transform: translateX(100vw);
+}
+.shutter-a.moved {
+    transform: translateX(-200vw);
+}
+
+.shutter-b {
+    transform: translateX(-200vw);
+}
+.shutter-b.moved {
+    transform: translateX(100vw);
+}
